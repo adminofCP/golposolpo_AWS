@@ -1,0 +1,144 @@
+/* Import of google font links */
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@600&display=swap');
+
+.content{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    top: -200px;
+    width: 1200px;
+    height: 400px;
+    background-color: rgba(56, 59, 59, 0.849);
+    border-radius: 16px;
+}
+.contactbox img #chat{
+    height: 50px;
+}
+.contentPoster{
+    position: relative;
+    top: -300px;
+    margin-left: 14%;
+}
+.contentPoster h2{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 50px;
+    color: rgb(255, 251, 2);
+}
+.contentPoster h4{
+    margin-left: 50px;
+}
+.LeftContact{
+    width: 40%;
+}
+.chatUs{
+    height: 55%;
+    width: 70%;
+    margin-top: 12%;
+    margin-left: 14%;
+}
+.contactbox{
+    color: rgb(1, 67, 92);
+    background: rgba(254, 255, 220, 0.863);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    font-family: 'Inconsolata', monospace;
+    font-size: 25px ;
+}
+.contactbox p{
+    margin-top: 10px;
+}
+.contactbox:hover{
+    background-image: linear-gradient(to top right, rgba(2,0,36,1) 0%, rgba(255,255,255,0.8631827731092436) 17%, rgba(254,254,255,1) 31%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 69%, rgba(245,247,247,1) 80%, rgba(254,254,254,1) 85%, rgba(255,0,0,0.8267682072829132) 100%);
+}
+.chatUs img:hover{
+    cursor: pointer;
+}
+.MiddleContent{
+    width: 30%;
+    margin: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Inconsolata', monospace;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-bottom: 25px;
+    margin:2%;
+}
+.RightContact{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.RightContactDiv{
+    display: flex;
+    flex-direction: row;
+    font-family: 'Inconsolata', monospace;
+}
+.LeftContact h1{
+    font-family: 'Bruno Ace', cursive;
+    font-size: 40px;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.LeftContact h4,.RightContact h2{
+    font-family: 'Satisfy', cursive;
+    margin-left: 5%;
+}
+/* .LeftContact,.MiddleContent,.RightContact{
+    border: 2px solid red;
+} */
+
+.mainContactPage{
+    /* background: linear-gradient(transparent,rgba(30, 27, 27, 0.63),rgba(31, 26, 26, 0.818),rgba(36, 31, 31, 0.778),rgba(30, 27, 27, 0.847),transparent); */
+    color: white;
+    height: 700px;
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+.styleofContent{
+    position: relative;
+    left: 30%;
+}
+.styleofContent i{
+    position: absolute;
+    inset: 0;
+    border: 3px solid rgb(255, 255, 255);
+    transition: 0.5s;
+    width: 150px;
+    height: 150px;
+}
+.styleofContent i:nth-child(1){
+    border-radius: 46% 54% 38% 62% / 48% 30% 70% 52% ;
+    animation: round_animate 6s linear infinite;
+}
+.styleofContent i:nth-child(2){
+    border-radius: 25% 75% 64% 36% / 61% 65% 35% 39% ;
+    animation: round_animate 4s linear infinite;
+}
+.styleofContent i:nth-child(3){
+    border-radius:73% 27% 58% 42% / 20% 30% 70% 80% ;
+    animation: round_animate 2s linear infinite;
+}
+.styleofContent:hover i{
+    border: 6px solid var(--clr);
+    filter: drop-shadow(0 0 20px var(--clr));
+}
+@keyframes round_animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+

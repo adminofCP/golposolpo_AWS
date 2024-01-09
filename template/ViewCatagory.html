@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{%block title%}GolpoSholpo|{{catagory.title}}{%endblock%}
+{%block content%}
+<div class="container">
+    <h3>{{catagory.title}}</h3>
+    <img src="/media/{{catagory.image}}/" alt="Catagory_image_not_found" class="ViewCatagoryHeadImage" width="100%"
+        height="300px">
+    {% for i in post %}
+    <div class="row PostCard">
+        <div class="col-8">
+            <h2>{{i.title}}</h2>
+            <p>{{i.content | truncatewords:3 | safe}}</p>
+            <div>
+                <a href="/blogging/post/{{i.urls}}/" class="MainBtn"> Read More </a>
+            </div>
+        </div>
+        <div class="col-4">
+            <img src="/media/{{i.image}}/" alt="" class="ml-1" height="200px" width="350px">
+        </div>
+    </div>
+    {% empty %}
+    <h3>No data found for this Catagory.</h3>
+    {% endfor %}
+</div>
+{%endblock%}

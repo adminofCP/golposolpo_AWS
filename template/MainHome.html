@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{%block title%}GolpoSholpo|Home{%endblock%}
+{%block content%}
+{% include 'TopSlide.html' %}
+<div class="owl-carousel container">
+    {% for i in catagory %}
+    <div class="card-for-catagory">
+        <div class="">
+            <img src="/media/{{i.image}}" alt="" class="ml-1 img-thumbnail img-card"
+                style="height: 200px;width: 350px;">
+        </div>
+        <h2>{{i.title}}</h2>
+        <div>
+            <a href="/blogging/catagory/{{i.urls}}/" class="MainBtn card-btn btn"> Get List </a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="container">
+    {% for i in post %}
+    <div class="row PostCard">
+        <div class="col paracontainer">
+            <h3>{{i.title}}</h3>
+            <p>{{i.content | truncatewords:3 | safe}}</p>
+            <div>
+                <a href="/blogging/post/{{i.urls}}/" class="MainBtn btn"> Read More </a>
+            </div>
+        </div>
+        <div class="col">
+            <img src="/media/{{i.image}}/" alt="" class="ml-1" height="200px" width="350px">
+        </div>
+    </div>
+    {% endfor %}
+</div>
+{%endblock%}

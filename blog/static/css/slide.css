@@ -1,0 +1,60 @@
+/* Css Font Style links */
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Changa&display=swap');
+
+.SlideContainer{
+    display: flex;
+    flex-direction: row;
+    height: 550px;
+}
+.containt{
+    padding-top: 100px;
+    max-width: 700px;
+    position: relative;
+    z-index: 10;
+}
+.containt h3{
+    font-size: 2em;
+    font-weight: 200;
+    transition: 0.5;
+    font-family: 'Changa', sans-serif;
+}
+.containt h2{
+    font-size: 4em;
+    font-weight: 700;
+    transition: 0.5;
+    font-family: 'Changa', sans-serif;
+}
+.containt h2 span{
+    color: rgb(255, 0, 81);
+    font-size: 50px;
+    font-family: 'Inconsolata', monospace;
+}
+.MyPhoto #colors{
+    height: 500px;
+    position: absolute;
+    animation: animatecolors 8s ease-in-out infinite;
+}
+#arpan{
+    position: absolute;
+    right: 100px;
+    bottom: 10px;
+    max-height: 85vh;
+    animation: animateman 8s ease-in-out infinite;
+}
+@keyframes animatecolors{
+    0%,100%{
+        transform: translateY(0px);
+    }
+    60%{
+        transform: translateY(30px);
+    }
+}
+@keyframes animateman{
+    0%,100%{
+        transform: translateX(0px);
+    }
+    60%{
+        transform: translateX(-30px);
+    }
+}

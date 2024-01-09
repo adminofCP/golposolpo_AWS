@@ -1,0 +1,115 @@
+/* Google font css link */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alkatra&display=swap');
+
+.PostCard{
+    margin: 5px 0 0 0;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid rgba(59, 56, 56, 0.604);
+    border-radius: 4px;
+}
+.BlogFullPost{
+    margin-top: 15px;
+}
+.fullstory{
+    font-family: 'Noto Sans Bengali', sans-serif;
+}
+
+/* Main Button Design */
+.MainBtn{
+    position: relative;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    padding: 5px 20px;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+.MainBtn:hover{
+    border: 2px solid rgba(66, 61, 61, 0.822);
+}
+a:hover{
+    text-decoration: none;
+    color: black;
+}
+.MainBtn::before{
+    content: '';
+    position: absolute;
+    inset: 0 3px;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    transition: 1s;
+}
+.MainBtn::after{
+    content: '';
+    position: absolute;
+    inset: 3px 0;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    transition: 1s;
+}
+.MainBtn:hover::before{
+    inset: 0 -6px;
+    transform: skewY(15deg);
+}
+.MainBtn:hover::after{
+    inset: -6px 0;
+    transform: skewX(15deg);
+}
+
+/* Cards design for Catagory */
+.card-for-catagory{
+    border: 0.5px solid rgba(66, 61, 61, 0.324);
+    border-radius: 6px;
+    padding: 7px;
+    margin-left: 3px;
+    margin-bottom: 10px;
+    font-family: 'Alkatra', cursive;
+}
+.card-for-catagory:hover{
+    /* filter: grayscale(100%);*/
+    color: rgba(197, 0, 0, 0.994); 
+    /* background: linear-gradient(45deg,rgba(255, 0, 0, 0.188) 10%,transparent 10%,transparent 50%,rgba(255, 0, 0, 0.188) 50%,rgba(255, 0, 0, 0.188) 60%,transparent 60%,transparent 100%); */
+    background: linear-gradient(45deg,rgba(255, 0, 0, 0.188),rgba(96, 82, 82, 0.188),rgba(255, 0, 0, 0.188));
+    box-shadow: 3px 5px 4px rgba(65, 44, 44, 0.72);
+    /* animation: animate_lines_45deg 2s linear infinite; */
+}
+/* @keyframes animate_lines_45deg{
+    0%{
+        background-position: 0;
+    }
+    100%{
+        background-position: 400px;
+    }
+} */
+.card-for-catagory:hover .img-card{
+    filter: hue-rotate(-270deg) sepia(55%) contrast(150%) saturate(300%) hue-rotate(270deg);
+}
+.card-btn{
+    margin: 25px 25px 20px 55px;
+}
+.card-for-catagory h2{
+    font-size: 20px;
+    padding-top: 5px;
+    padding-left: 15px;
+}
+
+/* css for social media icons */
+.mediaicons{
+    background: rgba(254, 255, 220, 0.863);
+    width: 25%;
+    height: 20%;
+    margin-top: 15px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+.mediaicons:hover{
+    background-image: linear-gradient(to top right, rgba(2,0,36,1) 0%, rgba(255,255,255,0.8631827731092436) 17%, rgba(254,254,255,1) 31%, rgba(249,249,249,1) 50%, rgba(255,255,255,1) 69%, rgba(245,247,247,1) 80%, rgba(254,254,254,1) 85%, rgba(255,0,0,0.8267682072829132) 100%);
+    cursor: pointer;
+}
+
+
+
+
+

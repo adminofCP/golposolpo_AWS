@@ -1,0 +1,49 @@
+{% extends 'base.html' %}
+{% load static %}
+{%block title%}GolpoSholpo | Contact with us{%endblock%}
+{%block content%}
+<div class="mainContactPage">
+    <div class="chatposter">
+        <img src="{% static 'image/ChatGirl.jpg'%}" alt="chat_girls" class="" width="100%" height="400px">
+        <div class="contentPoster">
+            <h2>Say 'Hi'</h2>
+            <h4>It's Free</h4>
+        </div>
+    </div>
+    <div class="content container">
+        <div class="LeftContact">
+            <h1>Contact With Us</h1>
+            <h4>If you have face any problem!!</h4>
+            <div class="chatUs contactbox">
+                    <p> Chat with me ..</p>
+                    <img src="{% static 'image/telegram.png'%}" alt="chat" id="chat" height="100px">
+            </div>
+        </div>
+        <div class="MiddleContent contactbox">
+            <div id="followtitle">
+                You can also follow us on our social media plartform ..
+            </div>
+            <img src="{% static 'image/facebook.svg'%}" alt="fb" class="mediaicons" height="50px">
+            <img src="{% static 'image/youtube.svg'%}" alt="youtube" class="mediaicons" height="50px">
+            <img src="{% static 'image/linkedin.svg'%}" alt="linkedin" class="mediaicons" height="50px">
+        </div>
+        <div class="RightContact">
+            <h2>We are also in earth</h2>
+            <div class="RightContactDiv">
+                <p>Chaulkhola, Gujarpur, Shyampur, Howrah - 711314, Near Chaulkhola Primary School.</p>
+                <img src="{% static 'image/location.gif'%}" alt="Lcation" height="120px">
+            </div>
+        </div>
+    </div>
+    <!-- <div class="styleofContent">
+        <i style="--clr:rgb(250, 228, 29)"></i>
+        <i style="--clr:rgb(29, 250, 239)"></i>
+        <i style="--clr:rgb(92, 250, 29)"></i>
+    </div> -->
+</div>
+<script>
+    document.getElementById('chat').onclick = function() {
+        window.open('https://t.me/vkarpan18')
+    }
+</script>
+{% endblock %}
