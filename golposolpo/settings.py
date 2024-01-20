@@ -27,6 +27,7 @@ SECRET_KEY = 'django-insecure-n7y#^exir0j$wo7h@dwc+35z46_9n^87!1fsrfuc*e=y@ijrb-
 DEBUG = True
 
 ALLOWED_HOSTS = ["13.201.107.93","172.26.4.180","*"]
+DJANGO_SETTINGS_MODULE=GolpoSolpo.settings
 
 
 # Application definition
